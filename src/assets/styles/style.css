@@ -9,3 +9,74 @@
 .test {
     color: red !important;
 }
+
+.p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+}
+
+.h1 {
+    font-size: 64px;
+    color: #1F3F68;
+}
+
+.h2 {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+.h3 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.h4 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+.textInput {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+.buttonSend {
+    background: #6369E7;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #4B74E6 0%, #6369E7 40%, #8B55E9 90%);
+    border: none;
+    margin: 10px;
+    padding: 15px 40px;
+    font-family: 'Inter', sans-serif;
+}
+
+.form {
+    background: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1612794187_110-p-goluboi-gradientnii-fon-169.jpg");
+}
+
+.header {
+    display: inline-block;
+    padding: 5px;
+    margin-right: 10px;
+    padding-right: 20px;
+    border-style: solid;
+    border-width: 0 2px 0 0;
+    border-color: black;
+    border-radius: 20px;
+}
+
+.headerAll {
+    background: linear-gradient(to top, #3F8484 0%, #F4F8F8 100%);
+}
