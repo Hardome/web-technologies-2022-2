@@ -7,47 +7,58 @@
     <title>IT-Website</title>
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
-<body>
-<div class="header">
-    IT Website
-    <ul>
-        <li>Services</li>
-        <li>Media</li>
-        <li>Cases</li>
-        <li>FAQ</li>
-        <li>Contacts</li>
-    </ul>
-    <ul class="header-contacts">
-        <li>+7 (111) 111 11 11</li>
-        <li>+7 (111) 111 11 11</li>
-        <li>itcompany@mail.com</li>
-    </ul>
 
-</div>
-<hr>
+<header class="header header-medium">
+    <p class="header-title header-title-bold">IT WEBSITE</p>
+    <ul class="header-list">
+        <li class="list-item">Services</li>
+        <li class="list-item">Media</li>
+        <li class="list-item">Cases</li>
+        <li class="list-item">FAQ</li>
+        <li class="list-item">Contacts</li>
+    </ul>
+    <div class="header-contacts">
+        <svg class="icon-phone">
+            <use href="./sprite.svg#phone"/>
+        </svg>
+        <p class="contacts-phone">+7 (111) 111 11 11</p>
+        <p class="contacts-phone">+7 (111) 111 11 11</p>
+        <svg class="icon-email">
+            <use href="./sprite.svg#email"/>
+        </svg>
+        <p class="contacts-email">itcompany@mail.com</p>
+    </div>
+
+</header>
+<body>
 <div class="title-description">
-    <div class="description">
-        <h2>Development of mobile applications and web services of any complexity</h2>
-        <p>We create mobile applications for iOS, Android that transfer your business to mobile applications of your
-            customer's devices</p>
+    <div class="title-bold">
+        <p>Development of <span class="blue-text">mobile applications</span> and <span
+                class="blue-text">web services</span> of any complexity</p>
     </div>
-    <div class="feedback">
-        <h4>Leave your contacts and we will call you back within 30 minutes</h4>
-        <form class="getFeedback">
-            <div>
-                <label for="phone" class="label">Phone number</label>
-                <input type="tel" name="phone" id="phone" value="+7 (111) 111-11-11">
-            </div>
-            <div>
-                <label for="name" class="label">Full name</label>
-                <input type="text" name="name" id="name" value="Иван Иванов">
-            </div>
-            <div>
-                <input type="submit" value="Get consultation" class="btn">
-            </div>
-        </form>
-    </div>
+    <p class="title-medium">We create mobile applications for iOS, Android that transfer your business to mobile
+        applications of your
+        customer's devices</p>
 </div>
+<form class="feedback">
+    <p class="header-title-bold feedback-text">Leave your contacts and we will call you back within 30 minutes</p>
+    <div class="getFeedback feedback-text-medium">
+        <div class="feedback-phone">
+            <label for="phone" class="label label-text">Phone number</label>
+            <input class="feedback-phone-input feedback-text-medium" type="tel" name="phone" id="phone"
+                   value="+7 (111) 111-11-11">
+        </div>
+        <div class="feedback-name">
+            <label for="name" class="label label-text">Full name</label>
+            <input class="feedback-name-input feedback-text-medium" type="text" name="name" id="name"
+                   value="Иван Иванов">
+        </div>
+        <button class="feedback-button button-text">
+            Get consultation
+        </button>
+    </div>
+</form>
+
 <hr>
 <div class="blockAboutDevelopment">
     <div class="description">

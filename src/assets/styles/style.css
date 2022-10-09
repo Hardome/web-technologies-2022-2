@@ -1,14 +1,39 @@
 @import "./global.css";
 @import "./fonts.css";
 @import "./utils.css";
+@import "./typography.css";
 
 
 .header {
-    font-weight: bold;
+    position: fixed;
+    top: 0;
+    margin-right: 16%;
+    margin-left: 8%;
+    background: #FFFFFF;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    height: 56px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
 }
 
 .header ul {
     display: inline-block;
+}
+
+.header-title {
+    color: #2D66EE;
+    margin-left: 24px;
+}
+
+.contacts-phone, .contacts-email {
+    text-decoration: none;
+    margin-right: 16px;
+    color: #2D66EE;
+    cursor: pointer;
 }
 
 .header ul li {
@@ -17,13 +42,87 @@
 }
 
 .header .header-contacts {
-    margin-top: 15px;
-    display: inline-block;
+    display: flex;
     float: right;
+    align-items: center;
+    margin-right: 24px;
 }
 
-.btn {
+.header-list {
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+}
 
+.list-item {
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.icon-phone {
+    width: 14px;
+    height: 20px;
+    margin-right: 13px;
+}
+
+.icon-email {
+    width: 20px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.feedback {
+    width: 36%;
+    margin-top: 64px;
+    background: #FFFFFF;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.08), 0 0 24px rgba(0, 0, 0, 0.16);
+    border-radius: 12px;
+    height: 190px;
+    margin-bottom: 100px;
+    margin-left: 10%;
+}
+
+.feedback-text {
+    width: 75%;
+    padding: 20px;
+}
+
+.getFeedback {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.feedback-phone, .feedback-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 224px;
+    margin-right: 30px;
+}
+
+.feedback-phone-input, .feedback-name-input {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    border-bottom: 0.7px solid #D0D5DD;
+}
+
+.feedback-button {
+    padding: 11px 24px;
+    background: #2D66EE;
+    border: none;
+    border-radius: 8px;
+    width: 132px;
+    height: 58px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.label {
+    color: #667085;
+    margin-bottom: 8px;
 }
 
 .blockAboutDevelopment .description {
@@ -31,8 +130,14 @@
     width: 25%;
 }
 
-.title-description .feedback form div {
-    display: inline-flex;
+.title-description {
+    margin-left: 10%;
+    width: 32%;
+    padding-top: 80px;
+}
+
+.blue-text {
+    color: #2D66EE;
 }
 
 .blockAboutDevelopment {
@@ -129,11 +234,11 @@
     width: 20%;
 }
 
-.faqBlock{
-padding-bottom: 100px ;
+.faqBlock {
+    padding-bottom: 100px;
 }
 
-.column-faq{
+.column-faq {
     float: left;
     width: 30%;
 }
@@ -147,7 +252,11 @@ padding-bottom: 100px ;
     padding: 0 50px;
     display: inline-block;
 }
-.center{
-    text-align:center;
+
+.center {
+    text-align: center;
 }
 
+.header-title {
+
+}
