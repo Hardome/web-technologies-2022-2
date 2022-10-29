@@ -3,6 +3,7 @@
 @import "./utils.css";
 @import "./typography.css";
 @import "./phone.css";
+@import "../../sprite.svg";
 
 
 
@@ -342,19 +343,66 @@ body:not(footer) > div{
     color: #306FF5;
 }
 
-.footer .footerBlock {
-    margin: 0 auto;
-    width: fit-content;
+footer{
+    margin: auto;
+    background: #101828;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.08), 0 2px 24px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
 }
 
-.footer .footerBlock .footerElement {
-    padding: 0 50px;
-    display: inline-block;
+
+.footer-center-title {
+    margin: auto;
+    color: #FFFFFF;
+    margin-bottom: 42px;
 }
 
-.footer-center {
-    text-align: center;
+.footer-contacts{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-auto-flow: column;
+
+    width: 100%;
+    margin-bottom: 20px;
 }
+
+.footer-contacts-element{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /*flex-direction: column;*/
+    color: #FFFFFF;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.footer-label-txt{
+    width: 100px;
+}
+
+.footer-svg{
+    height: 20px;
+    width: 14px;
+}
+.footer-label{
+    color: #98A2B3;
+    margin: 0;
+}
+/*.footer-label:after{
+    content: "sdфывфв";
+    background-image: url("../../sprite.svg#footer-phone");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    position: absolute;
+    color: #FFFFFF;
+}*/
 
 .header-title {
 
