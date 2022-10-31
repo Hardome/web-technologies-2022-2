@@ -7,8 +7,6 @@
 @import "./phone.css";
 
 
-
-
 header {
     position: fixed;
     right: 10%;
@@ -129,11 +127,6 @@ header {
     margin-bottom: 8px;
 }
 
-.blockAboutDevelopment .description {
-    display: inline-block;
-    width: 25%;
-}
-
 .title-description {
     margin-left: 10%;
     width: 600px;
@@ -161,25 +154,6 @@ header {
     display: inline-block;
 }
 
-
-.DevStagesBlock .column {
-    width: 40%;
-    display: inline-block;
-}
-
-.teamBlock {
-    width: 90%;
-}
-
-.teamBlock .description {
-    width: 40%;
-}
-
-.teamBlock .tripleStat {
-    display: inline-block;
-    margin-right: 10%;
-}
-
 .getBookBlock h2 {
     width: 20%;
 }
@@ -192,69 +166,79 @@ header {
     float: left;
     width: 30%;
 }
-.development-container{
+
+.development-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 128px;
     align-self: start;
 }
-.development-container-title{
+
+.development-container-title {
     margin-bottom: 32px;
 }
-body:not(footer) > div{
+
+body:not(footer) > div {
     margin-left: 10%;
 }
 
-.description{
+.description {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.description-title{
+
+.description-title {
     margin-bottom: 16px;
     margin-top: 34px;
 }
-.development-container-list{
+
+.development-container-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     word-wrap: normal;
     width: 75%;
 }
-.development-container-item{
+
+.development-container-item {
     display: flex;
     flex-direction: row;
     width: max-content;
 }
 
-.development-container-item:not(:last-child)::after{
+.development-container-item:not(:last-child)::after {
     content: "/";
     color: #2D66EE;
     margin-left: 2px;
     margin-right: 2px;
 }
-.development-list-links{
+
+.development-list-links {
     height: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 68px;
 
 }
-.development-list-links-item{
+
+.development-list-links-item {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-bottom: 24px;
 }
-.development-list-links-item-txt{
+
+.development-list-links-item-txt {
     border-bottom: 1px solid transparent;
 }
-.development-list-links-item-txt:hover{
+
+.development-list-links-item-txt:hover {
     border-bottom: 1px solid #2D66EE;
     font-weight: 700;
     cursor: pointer;
 }
 
-.development-list-links-item-icon{
+.development-list-links-item-icon {
     margin-left: 21px;
     width: 6.9px;
     height: 12px;
@@ -269,20 +253,20 @@ body:not(footer) > div{
     margin-bottom: 50px;
 }
 
-.industries-container-title{
+.industries-container-title {
     width: 600px;
     margin-top: 50px;
     margin-bottom: 30px;
 }
 
-.industries-list-item{
+.industries-list-item {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 16px;
 }
 
-.industries-list-item > svg{
+.industries-list-item > svg {
     background: white;
     border-radius: 100px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
@@ -291,11 +275,11 @@ body:not(footer) > div{
     height: 44px;
 }
 
-.blue{
+.blue {
     color: #306FF5;
 }
 
-footer{
+footer {
     margin: auto;
     background: #101828;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.08), 0 2px 24px rgba(0, 0, 0, 0.08);
@@ -316,14 +300,14 @@ footer{
     margin-top: 24px;
 }
 
-.footer-contacts{
+.footer-contacts {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     width: 100%;
 }
 
-.footer-contacts-element{
+.footer-contacts-element {
     display: grid;
     flex-direction: column;
     color: #FFFFFF;
@@ -333,30 +317,34 @@ footer{
 }
 
 
-.footer-svg{
+.footer-svg {
     margin-right: 10px;
 }
 
-.footer-label{
+.footer-label {
     color: #98A2B3;
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
 }
-.footer-center{
+
+.footer-center {
     margin: auto;
     color: #FFFFFF;
     margin-bottom: 24px;
     display: flex;
     flex-direction: row;
 }
-.header-menu{
+
+.header-menu {
     display: none;
 }
-.menu{
+
+.menu {
     display: none;
 }
-.header-links{
+
+.header-links {
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -366,7 +354,8 @@ footer{
     gap: 20px;
     font-size: 14px;
 }
-.header-menu-contacts{
+
+.header-menu-contacts {
     margin-top: 55px;
     display: flex;
     flex-direction: row;
@@ -374,19 +363,22 @@ footer{
     margin-left: auto;
     margin-right: auto;
 }
-.phone-icon, .email-icon{
+
+.phone-icon, .email-icon {
     width: 20px;
     height: 20px;
     margin-right: 13px;
     margin-left: 13px;
 }
-.menu-cross{
-    width:24px;
+
+.menu-cross {
+    width: 24px;
     height: 24px;
     margin-top: 2%;
     margin-left: 90%;
     margin-bottom: 3%;
 }
-.menu-contacts{
+
+.menu-contacts {
     color: #2D66EE;
 }
