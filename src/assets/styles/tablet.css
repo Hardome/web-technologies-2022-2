@@ -1,8 +1,94 @@
 @media screen and (min-width: 425px) and (max-width: 768px) {
-    ul.header-list, .phone-icon, .header-values-phone {
+
+    header{
+        width: 100%;
+        margin-top: 16px;
+        height: 90px;
+        left: 0;
+    }
+
+    .header-menu{
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul.header-list, .icon-phone, .contacts-phone {
         display: none;
     }
 
+    .menu-lines{
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: 59px;
+    }
 
+    .header-menu-line{
+        width: 59px;
+        height: 8px;
+        margin-left: 32px;
+}
+    .header-title{
+        color: #306FF5;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
+    .header-menu:hover >.menu{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top:0;
+        right: 0;
+        background-color: white;
+    }
+    .title-description{
+        width: 60%;
+        padding-top: 138px;
+    }
+    .title-medium{
+        width: 85%;
+    }
+    .feedback-text{
+        width: 95%;
+        font-size: 16px;
+    }
+    .feedback{
+        height: fit-content;
+        width: 50%;
+    }
+
+    .getFeedback{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        gap: 20px;
+    }
+
+    .feedback-button{
+        margin-bottom: 20px;
+        width: fit-content;
+        height: fit-content;
+    }
+    .development-container-list{
+        width: 100%;
+    }
+
+    .industries-container-title{
+        width: 65%;
+    }
+
+    .industries-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+    .footer-medium{
+        font-size: 14px;
+    }
+    footer{
+        width: 100%;
+    }
 }

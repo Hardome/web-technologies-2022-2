@@ -2,14 +2,15 @@
 @import "./fonts.css";
 @import "./utils.css";
 @import "./typography.css";
-@import "./phone.css";
 @import "../../sprite.svg";
+@import "./tablet.css";
+@import "./phone.css";
 
 
 
-.header {
+
+header {
     position: fixed;
-    top: 0;
     right: 10%;
     margin: auto;
     background: #FFFFFF;
@@ -141,55 +142,6 @@
 
 .blue-text {
     color: #2D66EE;
-}
-
-.blockAboutDevelopment {
-    position: relative;
-}
-
-.blockAboutDevelopment .dev-list {
-    display: inline-block;
-    width: 40%;
-}
-
-.blockAboutDevelopment .dev-list ul li {
-    font-size: 30px;
-    margin-bottom: 3px;
-    list-style: none;
-}
-
-.portfolioBlock .company .btn {
-    float: right;
-}
-
-.portfolioBlock .company ul {
-    display: inline-block;
-    padding-inline-start: 10px;
-}
-
-.portfolioBlock .company ul li {
-    display: inline;
-    margin-right: 30px;
-}
-
-
-.portfolioBlock .description {
-    width: 40%;
-}
-
-.portfolioBlock .description ul {
-    margin: 0;
-    padding-inline-start: 0;
-}
-
-.portfolioBlock .description ul li {
-    display: inline;
-    list-style: none;
-}
-
-.portfolioBlock .description .stats {
-    display: inline-block;
-    width: 40%;
 }
 
 .discussBlock {
@@ -398,7 +350,43 @@ footer{
     display: flex;
     flex-direction: row;
 }
-
-.header-title {
-
+.header-menu{
+    display: none;
+}
+.menu{
+    display: none;
+}
+.header-links{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+}
+.header-menu-contacts{
+    margin-top: 55px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.phone-icon, .email-icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 13px;
+    margin-left: 13px;
+}
+.menu-cross{
+    width:24px;
+    height: 24px;
+    margin-top: 2%;
+    margin-left: 90%;
+    margin-bottom: 3%;
+}
+.menu-contacts{
+    color: #2D66EE;
 }
