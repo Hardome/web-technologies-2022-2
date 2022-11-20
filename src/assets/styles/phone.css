@@ -75,7 +75,7 @@
     }
 
     .feedback-text {
-        width: 95%;
+        width: 90%;
         font-size: 15px;
     }
 
@@ -165,5 +165,26 @@
 
     .footer-contacts-element {
         margin-bottom: 35px;
+    }
+
+    .description-animation {
+        display: block;
+        grid-template-columns: repeat(2, 55%);
+
+    }
+
+    .background-images {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        height: 550px;
+        overflow: hidden;
+    }
+
+    .background-images img:nth-child(1) {
+        width: 137px;
+    }
+
+    .background-images img:nth-child(2) {
+        width: 137px;
     }
 }
