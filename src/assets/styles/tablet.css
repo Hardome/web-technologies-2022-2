@@ -7,6 +7,10 @@
         left: 0;
     }
 
+    body:not(footer) > div {
+        margin-left: 3%;
+    }
+
     .header-menu {
         display: flex;
         flex-direction: column;
@@ -138,5 +142,98 @@
 
     .background-images img:nth-child(2) {
         width: 137px;
+    }
+
+    .project-header-txt{
+        width: 470px;
+    }
+    .project-list{
+        gap: 50px;
+        grid-template-columns: repeat(1, 100%);
+    }
+    .projects-list-item{
+        font-size: 14px;
+    }
+    .project-button{
+        margin-left: 500px;
+    }
+    .project-list-items{
+        width: 700px;
+    }
+    .project-phones{
+        width: 350px;
+        height: 200px;
+        margin-top: 120px;
+    }
+    .project-name-description{
+        width: 470px;
+    }
+    .discuss-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .margin{
+        margin-left: 3%;
+    }
+    .discuss-form{
+        margin-top: 32px;
+        margin-bottom: 32px;
+        margin-left: 3%;
+    }
+    .discuss-txt{
+        margin-bottom: 0;
+    }
+    .stages{
+        display: flex;
+        flex-direction: column;
+    }
+    .development-stages-item{
+        width: 96%;
+        margin-bottom: 32px;
+    }
+    .dev-stages-item-txt{
+        width: 80%;
+    }
+    .team-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .team-description{
+        width: 60%;
+    }
+    .team-photo{
+        margin-top: 0px;
+    }
+    .team-info{
+        margin-bottom: 40px;
+        font-size: 14px;
+    }
+    .book-title{
+        width: 470px;
+    }
+    .labels{
+        display: flex;
+        flex-direction: column;
+    }
+    .book-form{
+        width: 330px;
+        height: 380px;
+    }
+    .book-form-btn{
+        margin: 0;
+        margin-top: 50px;
+        margin-bottom: 37px;
+        margin-left: 32px;
+    }
+    .book-photo{
+        width: 280px;
+        height: 420px;
+        margin: 0;
+        margin-top: 100px;
+        margin-left: 40px;
+    }
+    .faq-columns{
+        display: flex;
+        flex-direction: column;
     }
 }

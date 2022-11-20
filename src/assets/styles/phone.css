@@ -62,7 +62,7 @@
     .title-description {
         padding-top: 138px;
         width: 100%;
-        margin-left: 6%;
+        margin-left: 4%;
     }
 
     .title-bold {
@@ -103,7 +103,7 @@
         grid-template-columns: 1fr;
         gap: 8px;
         align-self: start;
-        margin-left: 6%;
+        margin-left: 4%;
     }
 
     .development-list-links {
@@ -115,7 +115,7 @@
     }
 
     .industries-container {
-        margin-left: 6%;
+        margin-left: 4%;
     }
 
     .industries-container-title {
@@ -186,5 +186,163 @@
 
     .background-images img:nth-child(2) {
         width: 137px;
+    }
+    .projects-container{
+        margin-left: 4%;
+    }
+    .project-header-txt{
+        width: 345px;
+    }
+    .project-list{
+        gap: 50px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 32px;
+    }
+    .projects-list-item{
+        font-size: 14px;
+    }
+    .project-button{
+        margin-left: 500px;
+    }
+    .project-list-items{
+        width: 410px;
+        display: grid;
+        grid-template-columns: 30% 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .project-button{
+        margin-left: 0%;
+    }
+    .project-phones{
+        width: 350px;
+        height: 200px;
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+    .project-name-description{
+        width: 400px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: -0.23999999463558197px;
+        text-align: left;
+
+    }
+    .projects-examples{
+
+    }
+    .inform{
+        display: flex;
+        flex-direction: column;
+    }
+    .discuss-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .margin{
+        margin-left: 6%;
+    }
+    .discuss-form{
+        display: flex;
+        flex-direction: column;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        margin-left: 3%;
+        height: 250px;
+        width: 95%;
+    }
+    .discuss-form-label{
+        width: 340px;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+    }
+    .discuss-form-btn{
+        margin: 0;
+        margin-top: 25px;
+        margin-left: 25%;
+    }
+    .discuss-txt{
+        margin-bottom: 0;
+    }
+    .stages{
+        display: flex;
+        flex-direction: column;
+    }
+    .development-stages-container{
+        margin-left: 4%;
+    }
+    .development-stages-item{
+        width: 96%;
+        margin-bottom: 16px;
+    }
+    .development-stages-title{
+        width: 90%;
+    }
+    .dev-stages-item-txt{
+        width: 80%;
+    }
+    .team-container{
+        display: flex;
+        flex-direction: column;
+        margin-left: 4%;
+    }
+    .team-description{
+        width: 95%;
+        font-size: 14px;
+    }
+    .team-numbers{
+        gap: 30px;
+    }
+    .team-photo{
+        margin-top: 0px;
+    }
+    .team-info{
+        margin-bottom: 40px;
+        font-size: 14px;
+        width: 90%;
+    }
+    .book-container{
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+    }
+    .book-title{
+        width: 100%;
+        margin-left: 4%;
+    }
+    .labels{
+        display: flex;
+        flex-direction: column;
+    }
+    .book-form{
+        width: 330px;
+        height: 380px;
+        margin-left: 4%;
+    }
+    .book-form-btn{
+        margin: 0;
+        margin-top: 50px;
+        margin-bottom: 37px;
+        margin-left: 32px;
+    }
+    .book-photo{
+        width: 280px;
+        height: 420px;
+        margin: 0;
+        margin-top: 0px;
+        margin-left: 30px;
+    }
+    .faq-columns{
+        display: flex;
+        flex-direction: column;
+    }
+    .faq-container{
+        margin-left: 4%;
+    }
+    .faq-question{
+        width: 100%;
     }
 }
