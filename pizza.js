@@ -38,6 +38,7 @@ export class Pizza {
         }
         return this.size.cost + this.baseCost + toppingsCost;
     }
+
     calculateCalories() {
         let calories = 0;
         if(this.size===size.big){
