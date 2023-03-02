@@ -11,56 +11,79 @@ let price = document.getElementById("price");
 let cheese = document.getElementById("cheese");
 let mozzarella = document.getElementById("mozzarella");
 let chedder = document.getElementById("chedder");
+let cheesePrice = document.getElementById("cheesePrice");
+let mozzarellaPrice = document.getElementById("mozzarellaPrice");
+let chedderPrice = document.getElementById("chedderPrice");
 
 let pizza = assortment.margarita;
 
 peperoni.onclick = function () {
-    pizza = assortment.pepperoni;
+    changePizza(assortment.pepperoni)
 }
 
 margarita.onclick = function () {
-    pizza = assortment.margarita;
+    changePizza(assortment.margarita)
 }
 
 bavarian.onclick = function () {
-    pizza = assortment.bavarian;
+    changePizza(assortment.bavarian)
+}
+
+function changePizza(pizzaType){
+    pizza = pizzaType;
+    pizza.toppingsArray =[];
+    calculate();
 }
 
 small.onclick = function () {
     pizza.setSize(size.small);
+    changeCostTopings(size.small);
+    calculate();
 }
 
 big.onclick = function () {
     pizza.setSize(size.big);
+    changeCostTopings(size.big);
+    calculate();
 }
 
 cheese.onclick = function (){
-    if(pizza.getToppings().includes(toppings.cheese_board)){
-        pizza.removeTopping(toppings.cheese_board);
-    } else
-        pizza.addTopping(toppings.cheese_board);
+    changeTopping(toppings.cheese_board);
 }
 
 mozzarella.onclick = function (){
-    if(pizza.getToppings().includes(toppings.creamy_mozzarella)){
-        pizza.removeTopping(toppings.creamy_mozzarella);
-    } else
-        pizza.addTopping(toppings.creamy_mozzarella);
+    changeTopping(toppings.creamy_mozzarella);
 }
 
 chedder.onclick = function (){
-    if(pizza.getToppings().includes(toppings.cheddar_parmesan)){
-        pizza.removeTopping(toppings.cheddar_parmesan);
-    } else
-        pizza.addTopping(toppings.cheddar_parmesan);
+    changeTopping(toppings.cheddar_parmesan);
 }
 
-price.onclick = function () {
-    price.textContent = "Цена "+pizza.calculatePrice()+" Каллории "+pizza.calculateCalories();
-/*    alert(pizza.getStuffing());
-    alert(pizza.getSize());*/
+ function changeTopping (topping) {
+     if(pizza.getToppings().includes(topping)){
+         pizza.removeTopping(topping);
+         calculate();
+     } else{
+         pizza.addTopping(topping);
+         calculate();
+     }
 }
 
+function calculate(){
+    price.textContent = "Добавить в корзину за "+pizza.calculatePrice()+"  ("+ pizza.calculateCalories()+"ккал)";
+}
+
+function changeCostTopings(newSize){
+    if(newSize===size.small){
+        chedderPrice.textContent = "150";
+        mozzarellaPrice.textContent = "50";
+        cheesePrice.textContent = "150";
+    } else {
+        chedderPrice.textContent = "300";
+        mozzarellaPrice.textContent = "100";
+        cheesePrice.textContent = "300";
+    }
+}
 
 
 
