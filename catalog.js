@@ -2,7 +2,7 @@ import { Catalog } from "./src/components/catalog.js"
 
 const renderPostItem = item => `
     <a  
-        href="posts/${item.id}"
+        href="posts.html?post=${item.id}"
         class="post-item"
     >
         <span class="post-item__title">
@@ -15,13 +15,13 @@ const renderPostItem = item => `
     </a>
 `
 
-const getPostItems = ({ limit, page }) => {
-    return fetch(`https://jsonplaceholder.typicode.com/posts?_limit=${limit}&_page=${page}`)
+const getPostItems = async ({ limit, page }) => {
+    return await fetch(`https://jsonplaceholder.typicode.com/posts?_limit=${limit}&_page=${page}`)
         .then(async res => {
             const total = +res.headers.get('x-total-count')
             const items = await res.json()
             return { items, total }
-        })
+        }).catch(err => alert(err));
 }
 
 const renderPhotoItem = item => `
@@ -40,18 +40,18 @@ const renderPhotoItem = item => `
     </a>
 `
 
-const getPhotoItems = ({ limit, page }) => {
-    return fetch(`https://jsonplaceholder.typicode.com/photos?_limit=${limit}&_page=${page}`)
+const getPhotoItems = async ({ limit, page }) => {
+    return await fetch(`https://jsonplaceholder.typicode.com/photos?_limit=${limit}&_page=${page}`)
         .then(async res => {
             const total = +res.headers.get('x-total-count')
             const items = await res.json()
             return { items, total }
-        })
+        }).catch(err => alert(err));
 }
 
-const init = () => {
+const init = async () => {
     const catalog = document.getElementById('catalog')
-    new Catalog(catalog, { 
+    await new Catalog(catalog, {
         renderItem: renderPostItem,
         getItems: getPostItems
      }).init()
@@ -60,5 +60,5 @@ const init = () => {
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init)
 } else {
-    init()
+    await init()
 }
