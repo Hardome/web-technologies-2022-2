@@ -15,9 +15,9 @@ const init = async () => {
     } else {
         loading.stop()
     }
-    function clickh() {
+    /*function clickh() {
        return alert('Test');
-    }
+    }*/
     const updateListTodos = () =>{
         const allTodos = Todos.getAll(data.user.id);
         totods.innerHTML = ''
