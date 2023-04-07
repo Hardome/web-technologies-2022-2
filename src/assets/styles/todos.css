@@ -1,0 +1,8 @@
+.todos-items{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
