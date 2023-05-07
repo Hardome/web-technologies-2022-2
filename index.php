@@ -37,16 +37,72 @@ $letters = ['a' => 'a', 'б' => 'b', 'в' => 'v', 'г' => 'g', 'д' => 'd', 'е'
     'х' => 'x', 'ц' => 'cz', 'ч' => 'ch', 'ш' => 'sh', 'щ' => 'shh', 'ъ' => '', 'ы' => 'y', 'ь' => '',
     'э' => 'e', 'ю' => 'yu', 'я' => 'ya'];
 
-function transliterationToLatin($str, $letters) {
+function transliterationToLatin($str, $letters)
+{
     return str_replace(array_keys($letters), array_values($letters), strtolower($str));
 }
-function transliterationToKiril($str, $letters) {
+
+function transliterationToKiril($str, $letters)
+{
     return str_replace(array_values($letters), array_keys($letters), strtolower($str));
 }
+
 echo transliterationToLatin('C кирилицы на латиницу', $letters);
 echo '<br>';
 echo transliterationToKiril('Naoborot', $letters);
 echo '<hr>';
+
+//4 вывел сюда т.к 5 задача на движке
+$menu = [
+    [
+        'title' => 'Главная',
+        'link' => 'index',
+    ],
+    [
+        'title' => 'О нас',
+        'link' => 'about',
+    ],
+    [
+        'title' => 'Каталог',
+        'link' => 'catalog'
+    ],
+    [
+        'title' => 'Подменю',
+        'link' => 'podmenu',
+        'children' => [
+            [
+                'title' => 'Подменю1',
+                'link' => 'podmenu1',
+                'children' => [
+                    [
+                        'title' => 'Подменю2',
+                        'link' => 'podmenu2',
+                    ],
+                    [
+                        'title' => 'Подменю2',
+                        'link' => 'podmenu2',
+                    ]
+                ]
+            ]
+        ]
+    ]
+];
+
+function printMenu($menu) {
+    echo '<ul>';
+    foreach ($menu as $key => $value) {
+        echo '<li>';
+        echo "<a href={$value['link']}> {$value['title']} </a>";
+        if (array_key_exists('children', $value)) {
+            printMenu($value['children']);
+        }
+        echo '</li>';
+    }
+    echo '</ul>';
+}
+
+echo printMenu($menu);
+//5 на движке (реализована)
 ?>
 
 <!doctype html>
