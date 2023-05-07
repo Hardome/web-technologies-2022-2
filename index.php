@@ -59,12 +59,6 @@ echo '<hr>';
     <title>Lesson18</title>
 </head>
 <body>
-<p><?php echo date('Y'); ?></p>
-<?php require('site.php') ?>
-<?php
-$year = date('Y');
-$content = file_get_contents('site.html');
-$content = str_replace('{{ year }}', $year, $content);
-echo $content; ?>
+
 </body>
 </html>
