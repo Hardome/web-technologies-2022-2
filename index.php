@@ -103,6 +103,26 @@ function printMenu($menu) {
 
 echo printMenu($menu);
 //5 на движке (реализована)
+echo '<hr>';
+
+//6
+$regions = [
+    'Московская область' => ['Москва', 'Зеленоград', 'Клин'],
+    'Ленинградская область' => ['Санкт-Петербург', 'Всеволожск', 'Павловск', 'Кронштадт'],
+    'Рязанская область' => ['Рязань', 'Шацк', 'Ряжск', 'Тума', 'Касимов',]
+];
+
+foreach ($regions as $region => $cities) {
+    echo $region . ': <br>';
+    foreach ($cities as $city){
+        if(str_starts_with($city, 'К')){
+            echo $city . ' ';
+        }
+    }
+    echo '<br>';
+}
+
+echo '<hr>';
 ?>
 
 <!doctype html>
