@@ -4,19 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc7ff285-8c5f-42b4-9c73-0fe24c733556" name="Changes" comment="1 по 6" />
+    <list default="true" id="5fb184b4-e7a5-4733-8e5f-07c3d3d5c5ce" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lesson17" />
+        <entry key="$PROJECT_DIR$" value="lesson18" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,76 +33,81 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
-  <component name="ProjectId" id="2PTFv8s5GcIy6DxzmHYOq5cCVfE" />
+  <component name="ProjectId" id="2Bew7EIAcJpE1vMEbw9wlhNEhW6" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;lesson18&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "lesson19",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/OSPanel/domains/localhost/templates",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\localhost\templates" />
+      <recent name="C:\OSPanel\domains\localhost\templates\layouts" />
+      <recent name="C:\OSPanel\domains\localhost\public\gallery_imgs\small" />
+      <recent name="C:\OSPanel\domains\localhost\public\gallery_imgs\big" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\localhost\engine\templates" />
+      <recent name="C:\OSPanel\domains\localhost\public\img" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/config" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PHPUnit.HomeControllerTest">
+    <configuration name="HomeControllerTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="tests\HomeControllerTest" file="$PROJECT_DIR$/tests/HomeControllerTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="HomeControllerTest.testIndex" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="tests\HomeControllerTest" file="$PROJECT_DIR$/tests/HomeControllerTest.php" method="testIndex" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.HomeControllerTest" />
+        <item itemvalue="PHPUnit.HomeControllerTest.testIndex" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bc7ff285-8c5f-42b4-9c73-0fe24c733556" name="Changes" comment="" />
-      <created>1683473392468</created>
+      <changelist id="5fb184b4-e7a5-4733-8e5f-07c3d3d5c5ce" name="Changes" comment="" />
+      <created>1657279688843</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1683473392468</updated>
-      <workItem from="1683473393730" duration="120000" />
-      <workItem from="1683473524062" duration="2241000" />
-      <workItem from="1683476281829" duration="9210000" />
-      <workItem from="1683537726507" duration="624000" />
+      <updated>1657279688843</updated>
+      <workItem from="1657279690050" duration="10391000" />
+      <workItem from="1657530439872" duration="1201000" />
+      <workItem from="1657622165994" duration="34605000" />
+      <workItem from="1658128140016" duration="9000" />
+      <workItem from="1658208419376" duration="106225000" />
+      <workItem from="1661104641823" duration="61622000" />
+      <workItem from="1680000100424" duration="2453000" />
+      <workItem from="1680164709540" duration="860000" />
+      <workItem from="1681055703371" duration="23763000" />
+      <workItem from="1682489216280" duration="12934000" />
+      <workItem from="1683181448718" duration="33920000" />
+      <workItem from="1684145189462" duration="87000" />
+      <workItem from="1684145393833" duration="11220000" />
+      <workItem from="1684157744062" duration="1949000" />
     </task>
-    <task id="LOCAL-00001" summary="fix">
-      <created>1683473541432</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1683473541432</updated>
-    </task>
-    <task id="LOCAL-00002" summary="1 to 3">
-      <created>1683475611530</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1683475611530</updated>
-    </task>
-    <task id="LOCAL-00003" summary="1 по 5">
-      <created>1683486268803</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1683486268803</updated>
-    </task>
-    <task id="LOCAL-00004" summary="1 по 6">
-      <created>1683487800526</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1683487800526</updated>
-    </task>
-    <task id="LOCAL-00005" summary="1 по 6">
-      <created>1683487900704</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1683487900704</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,29 +118,26 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="lesson18" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix" />
-    <MESSAGE value="1 to 3" />
-    <MESSAGE value="1 по 5" />
-    <MESSAGE value="1 по 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="1 по 6" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/models/magic.php</url>
+          <line>34</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/engine/auth.php</url>
+          <line>15</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
