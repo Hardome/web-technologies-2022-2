@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fb184b4-e7a5-4733-8e5f-07c3d3d5c5ce" name="Changes" comment="" />
+    <list default="true" id="5fb184b4-e7a5-4733-8e5f-07c3d3d5c5ce" name="Changes" comment="дамп БД webis" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lesson18" />
+        <entry key="$PROJECT_DIR$" value="lesson19" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,28 +38,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "lesson19",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/OSPanel/domains/localhost/templates",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;lesson20&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/OSPanel/domains/localhost&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\localhost" />
+      <recent name="C:\OSPanel\domains\localhost\public\img" />
       <recent name="C:\OSPanel\domains\localhost\templates" />
       <recent name="C:\OSPanel\domains\localhost\templates\layouts" />
       <recent name="C:\OSPanel\domains\localhost\public\gallery_imgs\small" />
-      <recent name="C:\OSPanel\domains\localhost\public\gallery_imgs\big" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\OSPanel\domains\localhost\engine\templates" />
@@ -106,8 +106,16 @@
       <workItem from="1683181448718" duration="33920000" />
       <workItem from="1684145189462" duration="87000" />
       <workItem from="1684145393833" duration="11220000" />
-      <workItem from="1684157744062" duration="1949000" />
+      <workItem from="1684157744062" duration="6303000" />
     </task>
+    <task id="LOCAL-00001" summary="дамп БД webis">
+      <created>1684163488715</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684163488715</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +131,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="дамп БД webis" />
+    <option name="LAST_COMMIT_MESSAGE" value="дамп БД webis" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
