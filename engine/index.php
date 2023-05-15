@@ -26,6 +26,10 @@ switch ($page) {
         $params['phone'] = '+7 495 123 23 23';
         $params['links'] = getLinks();
         break;
+    case 'lesson18':
+        $params['title'] = 'lesson18';
+        $params['links'] = getLinks();
+        break;
 
     case 'apicatalog':
         echo json_encode(getCatalog(), JSON_UNESCAPED_UNICODE);
@@ -49,6 +53,10 @@ function getLinks() {
         [
             'title' => 'О нас',
             'link' => 'about',
+        ],
+        [
+            'title' => 'lesson18',
+            'link' => 'lesson18'
         ]
     ];
 }
