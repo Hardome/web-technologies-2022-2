@@ -6,3 +6,9 @@
     flex-wrap: wrap;
     gap: 10px;
 }
+
+.todo{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}

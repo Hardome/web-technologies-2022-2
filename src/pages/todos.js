@@ -15,20 +15,57 @@ const init = async () => {
     } else {
         loading.stop()
     }
-    /*function clickh() {
-       return alert('Test');
-    }*/
     const updateListTodos = () =>{
+        loading.start();
         const allTodos = Todos.getAll(data.user.id);
         totods.innerHTML = ''
-
+        let asd = ''
         allTodos.then((x)=>{
             x.data.map((el)=>{
-                totods.innerHTML+= `<div id="${el.id}">${el.description}</div>`
-/*                const div = document.getElementById(el.id);
-                div.addEventListener("click", clickh, false);*/
+                asd += `<div class="todo"><input id="c${el.id}" type="checkbox"> <div id="${el.id}">${el.description}</div></div>`;
+            });
+            totods.innerHTML = asd;
+
+            x.data.forEach((el)=>{
+                const div = document.getElementById(el.id);
+                div.addEventListener("click", () => deleteTODO(el.id), false);
+                const checkBox = document.getElementById(`c${el.id}`);
+                checkBox.checked = el.completed;
+                checkBox.onchange = (e) => updateStatusTodo(e, el.id);
             })
+            loading.stop();
         })
+    }
+
+    async function deleteTODO(id) {
+        const isDelete = confirm('Вы уверены?');
+        if (isDelete) {
+            loading.start();
+            const res = await Todos.deleteById(id);
+            if (res.ok) {
+                updateListTodos();
+            }
+        }
+    }
+
+    const addTodo = async (description) => {
+        loading.start();
+        const res = await Todos.add(description);
+        if(res.ok) {
+            updateListTodos();
+            const input = formEl.getElementsByTagName('input')[0];
+            input.value = '';
+        }
+    }
+
+    const updateStatusTodo = async (e, id) => {
+        const checkboxValue = e.target.checked;
+        e.target.checked = !e.target.checked;
+        loading.start();
+        const res = await Todos.updateById(id, checkboxValue);
+        if(res.ok) {
+            updateListTodos();
+        }
     }
 
     new Form(formEl, {
@@ -41,23 +78,9 @@ const init = async () => {
 
             return false
         }
-    }, (values) => {
-        Todos.add(values)
-        totods.innerHTML+= `<div>${values.description}</div>`
-    })
+    }, (values) => addTodo(values));
 
-    //Todos.add(values) //добавляет
-    //Todos.updateById(21, {'completed': true}, {'description': 'NOSAD'}); //обновляет статус
-    //Todos.deleteById(28); //удаляет по айдишнику
-    //Todos.getById(22);
-    //Todos.getAll();
     updateListTodos();
-
-    // create add POST /todo { description: string }                Todos.add
-    // get getbyId /todo/1 - 1 это id                               Todos.getById
-    // getAll getall /todo  +++                                     Todos.getAll
-    // update put /todo/1 - 1 это id { description: string } +++    Todos.updateById
-    // delete delete /todo/1 - 1 это id                             Todos.deleteById
 }
 
 if (document.readyState === 'loading') {

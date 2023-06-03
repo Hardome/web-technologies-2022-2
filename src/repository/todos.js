@@ -17,7 +17,7 @@ const TodosRepository = {
   async updateById (id, completed) {
     return await api(`/todo/${id}`, {
       method: 'PUT',
-      body: JSON.stringify(completed)
+      body: JSON.stringify({completed})
     });
   },
 
